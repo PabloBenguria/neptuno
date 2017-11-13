@@ -6,11 +6,7 @@ module.exports = (app, db) => {
   app.get('/clientes', (req, res) => {
     db.clientes.findAll()
       .then(clientes => {
-        const response = {
-          status: 'ok',
-          data: clientes
-        }
-        res.json(response);
+        res.json(clientes);
       });
   });
 

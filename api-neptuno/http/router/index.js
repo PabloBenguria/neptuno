@@ -2,6 +2,7 @@
 
 const routes = [
   require('./routes/clientes'),
+  require('./routes/empleados')
   /*require('./routes/categorias'),
   require('./routes/detallepedido'),
   require('./routes/empleados'),

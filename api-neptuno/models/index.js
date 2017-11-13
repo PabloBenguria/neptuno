@@ -20,6 +20,7 @@ db.sequelize = sequelize;
 
 //Models/tables
 db.clientes = require('../models/cliente.js')(sequelize, Sequelize);
+db.empleados = require('../models/empleado.js')(sequelize, Sequelize);
 
 //Relations
 /*db.pets.belongsTo(db.owners);
